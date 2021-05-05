@@ -2,19 +2,24 @@ import React, {useState} from 'react';// import logo from './logo.svg';
 import './App.css';
 import {ChatController} from 'chat-ui-react';
 import {MuiChat} from 'chat-ui-react';
-import {Box, Card, Container} from '@material-ui/core';
+import {Box, Container} from '@material-ui/core';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAdTSsg1wKqPUJKMhu2xOk4alxx-Vu51Cs",
-    authDomain: "odishacovid-f837e.firebaseapp.com",
-    projectId: "odishacovid-f837e",
-    storageBucket: "odishacovid-f837e.appspot.com",
-    messagingSenderId: "30540383225",
-    appId: "1:30540383225:web:238b15c93f5cd11de0f328"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
+
+const socialMediaLinks = [
+    'https://www.instagram.com/covidresourcesodisha/',
+    'https://twitter.com/OdishaResource',
+    'https://www.facebook.com/Covid19ResourcesOdisha'
+]
 
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
