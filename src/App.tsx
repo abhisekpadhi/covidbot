@@ -532,6 +532,11 @@ class AppNewContent extends React.Component<Props, State> {
                     <div ref={this.scrlRef} />
 
                 </Box>
+                <Box display={'flex'} justifyContent={'center'} flex={1} paddingY={2}>
+                    <Box display={'flex'}>
+                        &copy; 2021 OdishaCovid.com
+                    </Box>
+                </Box>
             </Container>
         );
     }
