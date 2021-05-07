@@ -19,12 +19,30 @@ export const cities = [
     'Bhubaneswar',
     'Cuttack',
     'Berhampur',
+    'Angul',
+    'Dhenkanal',
+    'Titlagarh',
+    'Bargarh',
+    'Rayagada',
+    'Bhawanipatna',
+    'Talcher',
+    'Jharsuguda',
+    'Nayagarh',
+    'Balugaon',
+    'Brahmapur',
+    'Brajarajnagar',
+    'Chandipur',
     'Sambalpur',
     'Puri',
     'Balasore',
     'Bhadrak',
     'Baripada',
-    'Rourkela'
+    'Rourkela',
+    'Pipili',
+    'Barbil',
+    'Jatani',
+    'Hirakud',
+    'Phulabani'
 ];
 
 export const resources =  [
